@@ -18,9 +18,9 @@
     <h2>3. Selezionare tutti gli studenti che hanno più di 30 anni </h2>
     <p> SELECT * FROM `students` WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE() ) > 30 </p>
 
-    <h2>4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di </h2>
-    <p> SELECT * FROM `students` WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE() ) > 30 </p>
-
+    <h2>4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286) </h2>
+    <p> SELECT * FROM `courses` WHERE `period` = "I semestre" AND `year` = 1 </p>
+    
 
 </body>
 </html>
