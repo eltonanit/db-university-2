@@ -67,10 +67,18 @@
     <h2>4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui
     sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e
     nome</h2>
-    <p></p>
+    <p> SELECT students . name AS name_students . surname, students . date_of_birth
+        <br> students . fiscal_code , students enrolment_date , students . registration_number , students . email ,
+        <br>degrees . name  AS nome_corso_di_laurwa , degrees . level , departments . name AS nome_dipartimento
+        <br> FROM students
+        <br> JOIN degrees ON degrees . id = degrees . department_id
+        <br> JOIN departments ON departments . id = degrees . department_id
+        <br> ORDER BY students . surname , nome_studente 
+
+    </p>
 
     <h2>5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti</h2>
-    <p></p>
+    <p> SELECT </p>
 
     <h2>6. Selezionare tutti i docenti che insegnano nel Dipartimento di
     Matematica (54)</h2>
