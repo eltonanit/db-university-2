@@ -77,9 +77,15 @@
 
     </p>
 
+    
     <h2>5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti</h2>
-    <p> SELECT </p>
+    <p> SELECT degrees . name AS corso_di_laurea , courses . name  AS corso , teachers . nome_insegnate
+        <br>FROM degrees 
+    <br>JOIN courses ON courses . degree_id = degrees . id
+    <br> JOIN courses_teacher ON courses_teacher . course_id = courses . id
+    <br> JOIN teachers ON teachers . id = course_teacher_id</p>
 
+   
     <h2>6. Selezionare tutti i docenti che insegnano nel Dipartimento di
     Matematica (54)</h2>
     <p></p>
