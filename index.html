@@ -62,7 +62,7 @@
     <p> SELECT 'degrees' . name, degrees . level , degrees . address, degress . email , degrees . website FROM degrees JOIN departments ON departments . id = degrees . department_id WHERE departments . name = ?Dipartimento di Neuroscienze AND degrees . level = "Magistrale"</p>
 
     <h2>3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)</h2>
-    <p></p>
+    <p>SELECT courses FROM courses JOIN teachers ON course_teacher . teacher_id = teachers_id WHERE teachers . name = Fulvio AND teachers . surname = "D'Amato "</p>
     
     <h2>4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui
     sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e
