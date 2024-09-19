@@ -99,7 +99,13 @@
     <h2>7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
     per ogni esame, stampando anche il voto massimo. Successivamente,
     filtrare i tentativi con voto minimo 18</h2>
-    <p></p>
+    <p> SELECT students id , student . name , course . name AS nome_corso
+        <br> COUNT (exam_student . vote ) AS numero_tentativi, MAX (exam_student . vote ) AS voto_massimo
+        <br> FROM students 
+        <br> JOIN exam_student ON exam_student . student_id = students . id
+        <br> exams ON exams . id = exam_student - exam_id 
+        <br> JOIN courses ON courses . ID = exams . course_id
+    </p>
 
     
 
